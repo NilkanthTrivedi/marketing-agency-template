@@ -1,0 +1,307 @@
+@media screen and (min-width:500px){
+
+
+    .container{
+        background: darkolivegreen;
+    }
+    .header{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .header .menu ul{
+        flex-direction: column;
+    }
+    .header .menu ul li{
+        list-style: none;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    .header .search{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    /* .container Ends Here */
+
+    .content{
+        height: auto;
+        grid-template-columns: 1fr;
+        background: darkolivegreen;
+    }
+    .content .about .disc{
+        padding: 0;
+        padding: 40px;
+    }
+    .content .about .disc h2{
+        font-size: 22px;
+    }
+    .content .about .disc h1{
+        margin: 0;
+        font-size: 30px;
+        color: yellow;
+    }
+    .content .symbols{
+        padding: 0;
+        place-content: center;
+    }
+    /* Content Ends Here */
+    .scl{
+        height: auto;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .scl .invite{
+        padding: 40px;
+    }
+    .scl .social{
+        padding: 0px 40px 40px 0;
+        display: flex;
+        gap: 30px;
+        place-self: center;
+        padding-left: 60px;
+    }
+
+}
+
+/* Media Query For 768px */
+
+@media screen and (min-width:768px){
+    .header{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .header .search input{
+        width: 200px;
+    }
+    .content{
+        padding-top: 100px;
+        background-color: bisque;
+        background: url("../Images/Background_image.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+    }
+    .content .symbols{
+        padding: 0;
+        place-content: start;
+        padding-left: 40px;
+    }
+
+    /* content ENds Here */
+
+    .scl{
+        height: auto;
+        grid-template-columns: 1fr;
+        place-items: start;
+    }
+    .scl .invite{
+        padding: 0;
+        place-content: start;
+    }
+    .scl .social{
+        display: block;
+        gap: 30px;
+        place-self: end;
+    }
+
+}
+
+/* Media 992px Starts here  */
+@media screen and (min-width:992px) {
+    .header{
+        grid-template-columns: 3fr 5fr 4fr;
+    }
+    .header .menu ul{
+        flex-direction: row;
+    }
+    .header .menu ul li{
+        list-style: none;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+    .content{
+        padding-top: 50px   ;
+    }
+    .scl .invite{
+        padding: 0;
+        padding-top: 40px;
+    }
+}
+
+/* Media For 1280px */
+
+@media screen and (min-width:992px){
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+    }
+    .container{
+        width: 100%;
+        height: 800px;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-rows: 1fr 10fr;
+    }
+    .header{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 3fr 5fr 4fr;
+        text-align: center;
+        align-items: center;
+    }
+    .header .logo img{
+        width: 200px;
+        object-fit: contain;
+    }
+    .header .menu ul{
+        display: flex;
+    }
+    .header .menu ul li{
+        list-style: none;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+    .header .menu ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .header .menu ul li:first-child{
+        color: blue; 
+    }
+    .header .menu ul li a:hover{
+        color: orange;
+        text-shadow: 0px 1px 1px black;
+        transition-delay: 0.1s;
+    }
+    .header .search input{
+        width: 300px;
+        height: 35px;
+        border-radius: 15px;
+        border: 2px solid black;
+        text-align: right;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .header .search .fa-ellipsis-v{
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    /* Header Ends Here */
+    
+    .content{
+        background-color: bisque;
+        background: url("../Images/Background_image.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+    }
+    .content .about{
+        display: grid;
+        grid-template-rows: 6fr 2fr;
+    }
+    .content .about .disc{
+        color: white;
+        padding-top: 120px;
+        padding-left: 140px;
+    }
+    .content .about .disc h2{
+        color: #0adab9;
+    }
+    .content .about .disc h1{
+        margin-top: 20px;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 2px;
+    }
+    .content .about .disc p{
+        margin-top: 20px;
+    }
+    .content .about .disc button{
+        margin-top: 40px;
+        margin-left: 10px;
+        padding: 6px 16px;
+        background-color: #1a1f2c;
+        border: none;
+        border: 1px solid white;
+        border-radius: 20px;
+        
+    }
+    .content .about .disc button a{
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+    }
+    .content .about .disc button a:hover{
+        color: orange;
+        text-shadow: 0px 1px 1px orange;
+    }
+    .content .symbols{
+        display: flex;
+        padding-left: 130px;
+        gap: 10px;
+    }
+    .content .symbols .x{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        color:#b8136a;
+        font-size: 49px;
+    }
+    .content .symbols .x .fa-pie-chart{
+        font-size: 42px;
+        color: #13b8a0;
+        margin-left: 5px;
+        margin-top: 0;
+    }
+    .content .symbols .x .fa-lightbulb-o{
+        font-size: 45px;
+        color: #df9411;
+    }
+    
+    /* .content Ends Here */
+    
+    .scl{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .scl .invite{
+        color: white;
+        font-family: nunito;
+        padding-top: 50px;
+        padding-left: 80px;
+    }
+    .scl .invite h3{
+        font-size: 23px;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 2px;
+    }
+    .scl .social{
+        padding: 40px;
+        place-self: end;
+    }
+    .scl .social .icn{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        background-color: #0adab9;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    
+    /* .scl Ends Here */
+
+}
+
